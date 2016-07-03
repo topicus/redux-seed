@@ -1,0 +1,55 @@
+{
+  "name": "redux-seed",
+  "version": "1.0.0",
+  "description": "Very basic redux boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "test"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "boilerplate"
+  ],
+  "author": "Mariano Carballal <marianocarballal@gmail.com> (http://twitter.com/topicus1)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-runtime": "*",
+    "css-loader": "*",
+    "eslint-plugin-react": "*",
+    "extract-text-webpack-plugin": "*",
+    "file-loader": "*",
+    "jasmine-core": "*",
+    "json-loader": "*",
+    "json-server": "*",
+    "karma": "*",
+    "karma-coverage": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-spec-reporter": "*",
+    "karma-webpack": "*",
+    "node-sass": "*",
+    "phantomjs": "*",
+    "phantomjs-polyfill": "*",
+    "react-hot-loader": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}
