@@ -1,29 +1,31 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {increment} from '../actions/operations';
-
+import {withRouter} from 'react-router';
 // Map the state of the store to the props to be passed
 // to the container component.
-let mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
   count: state.count
 });
 
 // Map actions to properties in the container
-let mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
   onClick: () => dispatch(increment())
 });
 
-let Counter = ({
+const Counter = ({
     count,
-    onClick
+    onClick,
+    params
   }) => (
   <div>
     <div>{count}</div>
+    <div>{params.countStart}</div>
     <button onClick={onClick}>Increment</button>
   </div>
 );
 
-export const CounterContainer = connect(
+export const CounterContainer = withRouter(connect(
   mapStateToProps, 
   mapDispatchToProps
-)(Counter);
+)(Counter));
